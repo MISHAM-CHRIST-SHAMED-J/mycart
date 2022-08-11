@@ -1,7 +1,28 @@
 .App {
   text-align: center;
 }
-
+.iconimg{
+  width: 200px;
+ height: 50px;
+  padding-left: 30px;
+ margin-top: 6px;
+ opacity: 0;
+ transform: translateX(-30px);
+ animation: moveup 0.8s linear forwards;
+}
+@keyframes moveup{
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.nav{
+  width: 100%;
+  height: 65px;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, #fff,rgb(248, 162, 63));
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +56,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+.sam{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
+  margin: 2px;
+  padding: 2px;
+  align-items: center;
+}
+
+.img{
+  width: 200px;
+  height: 200px;
+  
+}
+.cont{
+  border: none;
+  height: 80px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 20px rgb(218, 211, 211);
+  display: flex;
+  background-image: linear-gradient(to right,#fff,rgb(248, 162, 63));
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: 'Calibri', sans-serif;
+  font-weight: bold;
+  margin-top: 5px;
+  opacity: 0;
+  transform: translateX(30px);
+  animation: moveup 0.8s linear forwards;
+}
+
+@keyframes moveup{
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.miz{
+opacity: 0;
+transform: translateY(30px);
+animation: moveup 0.8s linear forwards;
+}
+
+@keyframes moveup{
+100%{
+  opacity: 1;
+  transform: translateY(0px);
+}
 }
